@@ -50,16 +50,16 @@ export  const Result = () => {
 
         const res = await fetch("http://localhost:3000/users", {
             method: "POST",
-            body: entries,
+            body: formData,
         })
 
         console.log(res)
 
-            /*if (res.user.id === 1) {
+            if (res.user.id === 1) {
             Swal.fire("Great job!", "You've passed the challenge!", "success");
             setSuccess(true)
             alert("Yo")
-        }*/
+        }
     }
 
         if (success) {
