@@ -19,52 +19,47 @@ import Swal from "sweetalert2";
 
 const useStyles = makeStyles({
     root: {
-        marginBottom: "30px"
+        marginBottom: "30px",
     },
     table: {
-        marginBottom: "30px"
-    }
+        marginBottom: "30px",
+    },
 })
 
-export  const Result = () => {
+export const Result = () => {
     const [success, setSuccess] = useState(false);
-    const { data } = useDate()
     const styles = useStyles()
-    const entries = Object.entries(data).filter((entry) => entry[0] !== "files")
-    const { files } = data
+    const { data } = useData()
+
+    const entries = Object.entries(data).filter((entry) => entry[0] !== "files");
+    const { files } = data;
 
     const onSubmit = async () => {
-        const formData = new FormData()
+        const formData = new FormData();
         if (data.files) {
             data.files.forEach((file) => {
-                formData.append("files", file, file.name)
-            })
+                formData.append("files", file, file.name);
+            });
         }
+
         entries.forEach((entry) => {
             formData.append(entry[0], entry[1])
         })
 
-        for (var pair of formData.entries()) {
-            console.log(pair[0]+ ', ' + pair[1])
-        }
-
-        const res = await fetch("http://localhost:3000/users", {
+        const res = await fetch("http://localhost:4000/", {
             method: "POST",
             body: formData,
-        })
+        });
 
-        console.log(res)
-
-            if (res.user.id === 1) {
-            Swal.fire("Great job!", "You've passed the challenge!", "success");
+        if (res.status === 200) {
+            Swal.fire("Great job!", "You've passed the challenge!", "success")
             setSuccess(true)
-            alert("Yo")
         }
-    }
+    };
 
-        if (success) {
-            return alert("Ура");
-        }
+    if (success) {
+        return
+    }
 
     return (
         <>
@@ -113,5 +108,5 @@ export  const Result = () => {
                 <Link to="/">Start over</Link>
             </MainContainer>
         </>
-    )
-}
+    );
+};

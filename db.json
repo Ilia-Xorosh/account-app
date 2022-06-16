@@ -1,3 +1,77 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$Mph.E7AN22TAGXXfchp0ZuHgqzQ.4t83hxyDcrg0C/SySK98VMIuW",
+      "id": 1
+    },
+    {
+      "email": "kluchi_peter@mail.ru",
+      "password": "$2a$10$9qZkmnpaZhKHII5DdhjVAegrabILkzcDw/CQcqDCQXMW7WXmDXPTu",
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": "true",
+      "phoneNumber": "+7 960 259 33 32",
+      "confirmPassword": "1234ilia",
+      "id": 2
+    },
+    {
+      "email": "kluchir@mail.ru",
+      "password": "$2a$10$evTD5Duu.ZLmW9zlE0vP/.hEOko02ddToCkzq7hv0gQsPqQBoch.e",
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": "true",
+      "phoneNumber": "+7 960 259 33 32",
+      "confirmPassword": "12ilia12",
+      "id": 3
+    },
+    {
+      "email": "kluchir67@mail.ru",
+      "password": "$2a$10$SXySzD33vZAm0mEQ70mQIOPy2cmZXNwpYxn7DPrZ5X4R5OtNXp6Ha",
+      "files": {},
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": "true",
+      "phoneNumber": "+7 960 259 33 32",
+      "confirmPassword": "12ilia12",
+      "id": 4
+    },
+    {
+      "email": "kluchir67ffff@mail.ru",
+      "password": "$2a$10$eKd29J3YVKfxZfNbYXksrOrFnt3FAEkRVbE7xL4kvVeZPbSn4rCXm",
+      "files": {},
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": "true",
+      "phoneNumber": "+7 960 259 33 32",
+      "confirmPassword": "12ilia12",
+      "id": 5
+    },
+    {
+      "email": "kluchi_sfbaffbr@mail.ru",
+      "password": "$2a$10$VZlqHlg3NDqtkmeNCObVHO5r1LzAsFlTp0FqmvtomNyD8VFwBsWp6",
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": true,
+      "phoneNumber": "+7 960 259 33 32",
+      "files": [],
+      "confirmPassword": "ilia1212",
+      "id": 6
+    },
+    {
+      "email": "kluchi_sfbaffbrdffd@mail.ru",
+      "password": "$2a$10$Exip5vPO0YKseE9fB1ukT.WjV92EgaXK5B8M7Eug3.h2O.Q5RBVTK",
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": true,
+      "phoneNumber": "+7 960 259 33 32",
+      "files": [
+        {
+          "path": "01-аренда.webp"
+        }
+      ],
+      "confirmPassword": "ilia1212",
+      "id": 7
+    }
+  ]
 }
