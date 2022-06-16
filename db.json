@@ -72,6 +72,17 @@
       ],
       "confirmPassword": "ilia1212",
       "id": 7
+    },
+    {
+      "email": "kluchi_petesfgnwrnr@mail.ru",
+      "password": "$2a$10$OdRuim00oi5jaM.Ue/sHbeDDdz6WusgVB4OHHUvLUlDpFaEW8ARpa",
+      "firstname": "fdbadfg",
+      "lastname": "dadgagf",
+      "hasPhone": true,
+      "phoneNumber": "+7 960 259 33 32",
+      "files": [],
+      "confirmPassword": "1234567890",
+      "id": 8
     }
   ]
 }
